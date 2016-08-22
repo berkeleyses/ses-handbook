@@ -4,6 +4,7 @@
 \usepackage{graphicx}
 \usepackage{palatino}
 \usepackage[utf8]{inputenc}
+\usepackage{seqsplit}
 \usepackage{titlesec}
 
 \parskip = \baselineskip
@@ -13,6 +14,9 @@
 \titleformat{\chapter}[display]   
 {\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
 \titlespacing*{\chapter}{0pt}{-50pt}{20pt}
+
+% Remove section title from the headings.
+\pagestyle{myheadings}
 
 \begin{document}
 
@@ -29,6 +33,8 @@
 \end{titlepage}
 
 \large
+
+\tableofcontents
 
 \include{introduction}
 
@@ -55,6 +61,8 @@
 \include{career-internships}
 
 \include{libraries-department-offices}
+
+\include{society-of-engineering-sciences}
 
 \end{document}
 
