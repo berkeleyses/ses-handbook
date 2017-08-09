@@ -2,4 +2,3 @@
 
 latexmk -pdf main.tex
 latexmk -pdf converter.tex
-
